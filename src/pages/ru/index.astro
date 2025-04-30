@@ -1,0 +1,13 @@
+---
+const lang = "ru";
+import Layout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import Projects from '../../components/Projects.astro';
+import Contact from '../../components/Contact.astro';
+---
+
+<Layout title="Моё Портфолио" lang={lang}>
+  <Hero lang={lang} />
+  <Projects lang={lang} />
+  <Contact lang={lang} />
+</Layout>

@@ -1,0 +1,18 @@
+---
+const { title, lang = "en" } = Astro.props;
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <LanguageSwitcher lang={lang} />
+    <main class="max-w-6xl mx-auto p-8">
+      <slot />
+    </main>
+  </body>
+</html>

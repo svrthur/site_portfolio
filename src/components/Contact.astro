@@ -1,0 +1,20 @@
+---
+const { lang = 'en' } = Astro.props;
+
+const titles = {
+  en: "Contact Me",
+  ru: "Свяжитесь со мной",
+  zh: "联系我"
+};
+
+const descriptions = {
+  en: "Feel free to reach out via email or social media.",
+  ru: "Свяжитесь со мной по почте или в соцсетях.",
+  zh: "欢迎通过电子邮件或社交媒体联系我。"
+};
+---
+
+<section class="my-16">
+  <h2 class="text-3xl font-semibold mb-4">{titles[lang]}</h2>
+  <p class="text-gray-600">{descriptions[lang]}</p>
+</section>

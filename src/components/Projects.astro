@@ -1,0 +1,20 @@
+---
+const { lang = 'en' } = Astro.props;
+
+const titles = {
+  en: "Projects",
+  ru: "Проекты",
+  zh: "项目"
+};
+
+const descriptions = {
+  en: "Here are some of the things I've worked on.",
+  ru: "Вот некоторые из проектов, над которыми я работал.",
+  zh: "以下是我参与的一些项目。"
+};
+---
+
+<section class="my-16">
+  <h2 class="text-3xl font-semibold mb-4">{titles[lang]}</h2>
+  <p class="text-gray-600">{descriptions[lang]}</p>
+</section>
